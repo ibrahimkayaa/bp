@@ -1,8 +1,7 @@
-var exp = require('express');
-var app = exp();
-app.get('/',function(req,res){
-    res.send('Hello server');
-});
-app.listen(3030,function(){
-    console.log('The server is ready at port:3030');
-});
+var app = module.angular("myApp",[])
+	.controller("myController",["$scope",function($scope){
+		$scope.ttata = function(name){
+			window.alert("I wanna go to " + name);
+		}
+
+	}]);
