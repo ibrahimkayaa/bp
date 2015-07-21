@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <title>Boilerplate</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
 </head>
-<body>
+<body ng-controller="myController as ctrl">
     <div class="container">
       	<div class="page-header">
       		<h2>Boilerplate</h2>
+          </br>
       		<ul class="nav nav-pills">
-      			<li role="presentation" class="active"><a href="#home">About</a></li>
-      			<li role="presentation"><a href="#about">About</a></li>
-      			<li role="presentation"><a href="#contact">Contact us</a></li>
+      			<li role="presentation" class="active"><a href="#home" ng-click="ttata('Home')">Home</a></li>
+      			<li role="presentation"><a href="#about" ng-click="ttata('About')">About</a></li>
+      			<li role="presentation"><a href="#contact" ng-click="ttata('Contact us')">Contact us</a></li>
       		</ul>
       	</div>
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 </body>
 </html>
